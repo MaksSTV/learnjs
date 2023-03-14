@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="menu" style="cursor: pointer;">Нажми, чтобы показать/скрыть меню</div>
+    <ul id="list" style="display: none;">
+        <li>Пироженное</li>
+        <li>Пончик</li>
+        <li>Мед</li>
+    </ul>
+
+    <script>
+        let list = document.getElementById("list");
+        let menu = addEventListener("click", {handleEvent(event){
+            if(list.style.display == 'none'){
+                list.style.display = 'block';
+            }
+            else if(list.style.display == 'block'){
+                list.style.display = 'none';
+            }
+        }})
+    </script>
+</body>
+</html>
